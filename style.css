@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing:  border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#myCanvas {
+    border: 5px lightcyan solid;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    /*置中方法：先設定absolute並移出到上面的位置跟左邊的位置 
+    接著利用 transform裡的translate去移動自身*/
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#myScore, #myScore2 {
+    border: 2px pink solid;
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 10px;
+    color: lightgreen;
+    font-size: 2rem;
+}
+
+#start {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: lightcyan;
+}
+
